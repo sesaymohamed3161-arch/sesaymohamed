@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
+}
+.section-title{
+  color: #38bdf8;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:rgb(200, 224, 177);
+}
+.nav-links a:hover {
+  color: #38bdf8;
+}
+.nav-links a:active{
+  color: greenyellow;
+}
+
+section {
+  padding: 100px 10%;
+  min-height: 100vh;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+}
+
+.hero-text h1 span {
+  color: #38bdf8;
+}
+.hero-text p {
+  margin: 20px 0;
+  color: #cbd5e1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: white;
+}
+
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #38bdf8;
+}
+.skills-container,
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-box,
+.project-card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-content {
+  margin-top: 15px;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #1e293b;
+  color: white;
+}
+
+textarea {
+  height: 150px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #020617;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }}
+  form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #1e293b;
+  color: white;
+}
+
+textarea {
+  height: 150px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #020617;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+   nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
